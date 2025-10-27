@@ -1,9 +1,16 @@
+<!-- Struktur dasar dokumen HTML -->
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
+  <!-- Metadata dan pengaturan tampilan dasar -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Judul halaman -->
   <title>Proyeksi dan Distribusi Penduduk Kaltim 2020–2025</title>
+
+  <!-- CSS internal: mengatur warna, font, layout -->
   <style>
     body {
       font-family: 'Times New Roman', Times, serif;
@@ -13,6 +20,7 @@
       color: #222;
     }
 
+    /* Bagian header (judul & logo) */
     .header {
       display: flex;
       align-items: center;
@@ -24,6 +32,7 @@
       position: relative;
     }
 
+    /* Logo di kiri atas */
     .header img {
       position: absolute;
       left: 20px;
@@ -31,12 +40,14 @@
       border-radius: 10px;
     }
 
+    /* Judul besar di tengah header */
     .header h1 {
       margin: 0;
       font-size: 22px;
       text-align: center;
     }
 
+    /* Subjudul */
     .header p {
       margin: 5px 0 0 0;
       text-align: center;
@@ -44,6 +55,7 @@
       color: #333;
     }
 
+    /* Wadah utama konten */
     .container {
       max-width: 900px;
       background-color: #fff;
@@ -53,6 +65,7 @@
       overflow: hidden;
     }
 
+    /* Tabel data penduduk */
     table {
       width: 100%;
       border-collapse: collapse;
@@ -63,15 +76,18 @@
       padding: 12px 15px;
     }
 
+    /* Baris judul kolom tabel */
     th {
       background-color: #fff;
       border-bottom: 2px solid #bde2b3;
     }
 
+    /* Efek hover baris tabel */
     tr:not(:first-child):hover {
       background-color: #fdf4f6;
     }
 
+    /* Footer */
     .footer {
       text-align: center;
       font-size: 13px;
@@ -82,9 +98,13 @@
     }
   </style>
 </head>
+
 <body>
 
+  <!-- Container utama -->
   <div class="container">
+
+    <!-- Header berisi logo dan judul -->
     <div class="header">
       <img src="https://iconlogovector.com/uploads/images/2023/06/lg-8964918efb146eebfbbfa25f95b6b8e930.jpg" alt="Logo Kaltim">
       <div>
@@ -93,6 +113,7 @@
       </div>
     </div>
 
+    <!-- Tabel Data Penduduk -->
     <table>
       <tr>
         <th>No</th>
@@ -113,10 +134,11 @@
       <tr><td>11</td><td>Mahakam Ulu</td><td>32.420</td><td>34.740</td></tr>
     </table>
 
+    <!-- Footer sumber data -->
     <div class="footer">
       <p>Sumber : Data BPS Kalimantan Timur</p>
     </div>
-  </div>
 
+  </div>
 </body>
 </html>
